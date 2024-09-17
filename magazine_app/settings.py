@@ -8,7 +8,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-INSTALLED_APPS = ["rest_framework", "magazine_api"]
+INSTALLED_APPS = [
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "rest_framework",
+    "magazine_api",
+]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
