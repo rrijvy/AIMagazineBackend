@@ -7,10 +7,12 @@
   "console": "integratedTerminal",
   "internalConsoleOptions": "neverOpen",
   "skipFiles": ["<node_internals>/**", "${workspaceFolder}/node_modules/**"],
+  "envFile": "${workspaceFolder}/.env",
+  "preLaunchTask": "npm build",
   "configurations": [
     {
       "command": "npm start",
-      "name": "Run npm start",
+      "name": "Debug",
       "request": "launch",
       "type": "node-terminal"
     }
